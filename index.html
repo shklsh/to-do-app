@@ -6,8 +6,48 @@
      <title></title>
      <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-     <body>
-        <h1>hello world</h1>
-        <script src="index.js"></script>
-     </body>
+
+  <body>
+    <h1>To do lists</h1>
+
+    <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="Create">
+        <input type="button" id="addButton" value="Create">
+    </div>
+
+    <ul id="myUL">
+        <li>Exercise
+            <span class="time"><input type="date" placeholder="Date"></span>
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+        <li class="checked">Drink coffee
+            <span class="time"><input type="date" placeholder="Date"></span>
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+        <li>Go to work
+            <span class="time"><input type="date" placeholder="Date"></span>
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+        <li>Dinner
+            <span class="time"><input type="date" placeholder="Date"></span>
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+        <li>Watch Netflix
+            <span class="time"><input type="date" placeholder="Date"></span>
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+    </ul>
+
+    <footer>
+         <p>Created by <span style= "color:purple">Se Oh</span></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
