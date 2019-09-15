@@ -8,45 +8,41 @@
   </head>
 
   <body>
-    <h1>To do lists</h1>
-
-    <div id="myDIV" class="header">
-        <input type="text" id="myInput" placeholder="Create">
-        <input type="button" id="addButton" value="Create">
+    <div id="myDiv">
+        <h1>To do lists</h1>
+        <input type="text" id="myText" placeholder="Add">
+        <input type="button" id="addButton" value="Add" onclick="addList()">
     </div>
-
-    <ul id="myUL">
-        <li>Exercise
-            <span class="time"><input type="date" placeholder="Date"></span>
-            <input type="button" class="editButton" value="Edit">
-            <input type="button" class="deleteButton" value="Delete">
+    
+    <ul id="myList">
+        <li id="list1">
+            <input type="text" id="li-text1" value="Exercise"></input>
+            <input type="date" id="time1" placeholder="Due date">
+            <input type="button" id="editButton1" value="Edit">
+            <input type="button" id="deleteButton1" value="Delete">
+            <input type="checkbox" id="checkBox1" value="" checked>
         </li>
-        <li class="checked">Drink coffee
-            <span class="time"><input type="date" placeholder="Date"></span>
-            <input type="button" class="editButton" value="Edit">
-            <input type="button" class="deleteButton" value="Delete">
+        <li id="list2">
+            <input type="text" id="li-text2" value="Drink coffee"></input>
+            <input type="date" id="time2" placeholder="Due date">
+            <input type="button" id="editButton2" value="Edit">
+            <input type="button" id="deleteButton2" value="Delete">
+            <input type="checkbox" id="checkBox2" value="" checked>
         </li>
-        <li>Go to work
-            <span class="time"><input type="date" placeholder="Date"></span>
-            <input type="button" class="editButton" value="Edit">
-            <input type="button" class="deleteButton" value="Delete">
-        </li>
-        <li>Dinner
-            <span class="time"><input type="date" placeholder="Date"></span>
-            <input type="button" class="editButton" value="Edit">
-            <input type="button" class="deleteButton" value="Delete">
-        </li>
-        <li>Watch Netflix
-            <span class="time"><input type="date" placeholder="Date"></span>
-            <input type="button" class="editButton" value="Edit">
-            <input type="button" class="deleteButton" value="Delete">
+        <li id="list3">
+            <input type="text" id="li-text3" value="Dinner"></input>
+            <input type="date" id="time3" placeholder="Due date">
+            <input type="button" id="editButton3" value="Edit">
+            <input type="button" id="deleteButton3" value="Delete">
+            <input type="checkbox" id="checkBox3" value="" checked>
         </li>
     </ul>
 
     <footer>
-         <p>Created by <span style= "color:purple">Se Oh</span></p>
+         <p>Created by <span style= "color:blue">Se Oh</span></p>
     </footer>
 
+    <script src="https://kit.fontawesome.com/c5fb3fea1f.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="index.js"></script>
   </body>
