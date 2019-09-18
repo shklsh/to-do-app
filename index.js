@@ -2,9 +2,8 @@ const listItemTemplate = `
 	<li>
         <input type="text" value="taskName">
         <input type="date" value="taskDate">
-        <input type="button" value="Edit">
-        <input type="button" value="Delete">
-        <input type="checkbox" value="" checked>
+        <input type="button" class="deleteButton" value="Delete">
+        <input type="checkbox">
     </li>
 `;
 
@@ -32,6 +31,7 @@ function addList() {
     }
 }
 
-//Edit 
-
 //Delete an existing list when "Delete" button clicked
+$(document).on('click', '.deleteButton', function() {
+    $(this).parent().remove();
+})
