@@ -10,29 +10,32 @@
   <body>
     <div id="myDiv">
         <h1>To do lists</h1>
-        <input type="text" id="myText">
-        <input type="date" id="myDate">
+        <input type="text" id="myNewToDoListText">
+        <input type="date" id="myNewToDoListDate">
         <input type="button" id="addButton" value="Add" onclick="addList()">
     </div>
 
     <ul id="myList">
         <li class="taskList">
-            <input type="text" class="taskName" value="Exercise">
+            <input type="checkbox" class="checkBox">
+            <span class="newTaskName">Exercise</span>
+            <input type="date" class="newTaskDate">
+            <input type="button" class="editButton" value="Edit">
+            <input type="button" class="deleteButton" value="Delete">
+        </li>
+        <li class="taskList">
+            <input type="checkbox" class="checkBox">
+            <span class="newTaskName">Drink Coffee</span>
             <input type="date" class="taskDate">
+            <input type="button" class="editButton" value="Edit">
             <input type="button" class="deleteButton" value="Delete">
-            <input type="checkbox" class="checkBox">
         </li>
         <li class="taskList">
-            <input type="text" class="taskName" value="Drink coffee">
-            <input type="date" class="taskDate" placeholder="Due date">
-            <input type="button" class="deleteButton" value="Delete">
             <input type="checkbox" class="checkBox">
-        </li>
-        <li class="taskList">
-            <input type="text" class="taskName" value="Dinner">
-            <input type="date" class="taskDate" placeholder="Due date">
+            <span class="newTaskName">Dinner</span>
+            <input type="date" class="taskDate">
+            <input type="button" class="editButton" value="Edit">
             <input type="button" class="deleteButton" value="Delete">
-            <input type="checkbox" class="checkBox">
         </li>
     </ul>
 

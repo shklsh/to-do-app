@@ -2,10 +2,6 @@ body {
     background-color: lightgrey;
     padding:0;
     margin:0;
-    background-image: url(https://www.oberman.com/wp-content/uploads/sites/97/2018/05/financial-advisor_shaking-hand.jpg);
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-position: bottom left;
 }
 h1 {
     text-align: center;
@@ -15,9 +11,15 @@ h1 {
 }
 #myDiv {
     text-align: center;
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
-input[type="text"]  {
+h1 {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+#myNewToDoListText,.newTaskName {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#myNewToDoListText,.newTaskName  {
     display: inline-block;
     margin: 6px;
     padding: 5px 10px;
@@ -25,7 +27,7 @@ input[type="text"]  {
     border: 2px solid;
     border-radius: 5px;
     font-size: 24px;
-    width: 30%
+    width: 30%;
 }
 input[type="button"] {
     cursor: pointer;
@@ -39,7 +41,7 @@ input[type="date"] {
     font-size: 12px;
 }
 input[type="checkbox"] {
-    zoom: 1.5;
+    zoom: 2;
     padding: 10px;
 }
 li {
@@ -53,7 +55,7 @@ ul li {
     padding: 3px 0;
     max-width: 100%;
 }
-#addButton:hover,.deleteButton:hover {
+#addButton:hover,.editButton:hover,.deleteButton:hover {
     background-color: darkgreen
 }
 footer {
