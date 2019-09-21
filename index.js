@@ -23,6 +23,7 @@ function addTask(newTaskName, newTaskDate) {
 function addList() {
     let inputValue = $("#myNewToDoListText").val();
     let inputDate = $("#myNewToDoListDate").val();
+    console.log(inputDate)
 
     if (inputValue !== '') {
         let liText = listItemTemplate;
@@ -30,7 +31,7 @@ function addList() {
         // liText = liText.replace(inputDate); 
         $("#myList").append(liText);
         $('#myList > li:last-child > span').text(inputValue);
-        $('#myList > li:last-child > input [type=date]').attr(inputDate);
+        $('#myList > li:last-child > .newTaskDate').val(inputDate);
         addTask(inputValue, inputDate);
     }
 }
