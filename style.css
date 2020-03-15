@@ -7,14 +7,11 @@ h1 {
     text-align: center;
     font-size: 72px;
     color: red;
-    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, sans-serif;
 }
 #myDiv {
     text-align: center;
     background-color: whitesmoke;
-}
-h1 {
-    font-family: 'Times New Roman', Times, sans-serif;
 }
 #myNewToDoListText,.newTaskName {
     font-family: Arial, Helvetica, sans-serif;

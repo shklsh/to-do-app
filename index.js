@@ -23,21 +23,20 @@ function addTask(newTaskName, newTaskDate) {
 function addList() {
     let inputValue = $("#myNewToDoListText").val();
     let inputDate = $("#myNewToDoListDate").val();
-    console.log(inputDate)
 
     if (inputValue !== '') {
         let liText = listItemTemplate;
-        // liText = liText.replace(inputValue); 
-        // liText = liText.replace(inputDate); 
         $("#myList").append(liText);
         $('#myList > li:last-child > span').text(inputValue);
         $('#myList > li:last-child > .newTaskDate').val(inputDate);
         addTask(inputValue, inputDate);
     }
 }
+
 //Edit an existing list when "Edit" button clicked
-$('.editButton').click(function () {
+$(document).on('click', '.editButton', function () {
     $('li').prop('contenteditable', 'true');
+    //update the array
 })
 
 //Delete an existing list when "Delete" button clicked
