@@ -1,4 +1,4 @@
-# gaseifx01-project1
+# gaseifx01-project0
 - to-do-list app that you can add, edit or delete a list with a click of a button on a webpage
 - you can set due date and update status whether a task is complete or incomplete
 
